@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 29 2017 г., 16:49
+-- Время создания: Сен 30 2017 г., 17:04
 -- Версия сервера: 5.5.50
 -- Версия PHP: 5.3.29
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `mysite`
+-- База данных: `grid`
 --
 
 -- --------------------------------------------------------
@@ -1474,7 +1474,7 @@ CREATE TABLE IF NOT EXISTS `new_manager_log` (
   `action` varchar(100) NOT NULL DEFAULT '',
   `classKey` varchar(100) NOT NULL DEFAULT '',
   `item` varchar(255) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=2882 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2962 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `new_manager_log`
@@ -4365,7 +4365,87 @@ INSERT INTO `new_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `
 (2878, 1, '2017-09-29 08:50:40', 'chunk_update', 'modChunk', '29'),
 (2879, 1, '2017-09-29 08:50:40', 'propertyset_update_from_element', 'modChunk', '29'),
 (2880, 1, '2017-09-29 08:59:01', 'login', 'modContext', 'web'),
-(2881, 1, '2017-09-29 16:38:56', 'login', 'modContext', 'web');
+(2881, 1, '2017-09-29 16:38:56', 'login', 'modContext', 'web'),
+(2882, 1, '2017-09-29 16:59:22', 'login', 'modContext', 'web'),
+(2883, 1, '2017-09-29 16:59:48', 'login', 'modContext', 'mgr'),
+(2884, 1, '2017-09-29 16:59:59', 'login', 'modContext', 'web'),
+(2885, 1, '2017-09-30 12:30:11', 'login', 'modContext', 'mgr'),
+(2886, 1, '2017-09-30 12:30:54', 'setting_update', 'modSystemSetting', 'site_name'),
+(2887, 1, '2017-09-30 12:31:12', 'login', 'modContext', 'web'),
+(2888, 1, '2017-09-30 12:31:58', 'login', 'modContext', 'web'),
+(2889, 1, '2017-09-30 12:59:35', 'chunk_update', 'modChunk', '29'),
+(2890, 1, '2017-09-30 12:59:35', 'propertyset_update_from_element', 'modChunk', '29'),
+(2891, 1, '2017-09-30 13:00:31', 'chunk_update', 'modChunk', '29'),
+(2892, 1, '2017-09-30 13:00:31', 'propertyset_update_from_element', 'modChunk', '29'),
+(2893, 1, '2017-09-30 13:04:48', 'chunk_update', 'modChunk', '29'),
+(2894, 1, '2017-09-30 13:04:48', 'propertyset_update_from_element', 'modChunk', '29'),
+(2895, 1, '2017-09-30 13:05:02', 'chunk_update', 'modChunk', '29'),
+(2896, 1, '2017-09-30 13:05:03', 'propertyset_update_from_element', 'modChunk', '29'),
+(2897, 1, '2017-09-30 13:05:48', 'chunk_create', 'modChunk', '84'),
+(2898, 1, '2017-09-30 13:09:38', 'chunk_update', 'modChunk', '29'),
+(2899, 1, '2017-09-30 13:09:39', 'propertyset_update_from_element', 'modChunk', '29'),
+(2900, 1, '2017-09-30 13:10:16', 'chunk_update', 'modChunk', '29'),
+(2901, 1, '2017-09-30 13:10:16', 'propertyset_update_from_element', 'modChunk', '29'),
+(2902, 1, '2017-09-30 13:10:21', 'chunk_update', 'modChunk', '29'),
+(2903, 1, '2017-09-30 13:10:22', 'propertyset_update_from_element', 'modChunk', '29'),
+(2904, 1, '2017-09-30 13:11:03', 'chunk_update', 'modChunk', '29'),
+(2905, 1, '2017-09-30 13:11:03', 'propertyset_update_from_element', 'modChunk', '29'),
+(2906, 1, '2017-09-30 13:13:16', 'chunk_update', 'modChunk', '29'),
+(2907, 1, '2017-09-30 13:13:17', 'propertyset_update_from_element', 'modChunk', '29'),
+(2908, 1, '2017-09-30 13:13:46', 'chunk_update', 'modChunk', '84'),
+(2909, 1, '2017-09-30 13:13:46', 'propertyset_update_from_element', 'modChunk', '84'),
+(2910, 1, '2017-09-30 13:17:57', 'chunk_update', 'modChunk', '84'),
+(2911, 1, '2017-09-30 13:17:57', 'propertyset_update_from_element', 'modChunk', '84'),
+(2912, 1, '2017-09-30 13:19:40', 'chunk_update', 'modChunk', '84'),
+(2913, 1, '2017-09-30 13:19:41', 'propertyset_update_from_element', 'modChunk', '84'),
+(2914, 1, '2017-09-30 13:33:50', 'chunk_update', 'modChunk', '84'),
+(2915, 1, '2017-09-30 13:33:51', 'propertyset_update_from_element', 'modChunk', '84'),
+(2916, 1, '2017-09-30 13:57:47', 'login', 'modContext', 'web'),
+(2917, 1, '2017-09-30 14:53:13', 'chunk_update', 'modChunk', '9'),
+(2918, 1, '2017-09-30 14:53:14', 'propertyset_update_from_element', 'modChunk', '9'),
+(2919, 1, '2017-09-30 14:55:16', 'chunk_update', 'modChunk', '9'),
+(2920, 1, '2017-09-30 14:55:17', 'propertyset_update_from_element', 'modChunk', '9'),
+(2921, 1, '2017-09-30 14:56:14', 'chunk_update', 'modChunk', '9'),
+(2922, 1, '2017-09-30 14:56:14', 'propertyset_update_from_element', 'modChunk', '9'),
+(2923, 1, '2017-09-30 14:57:25', 'chunk_update', 'modChunk', '9'),
+(2924, 1, '2017-09-30 14:57:26', 'propertyset_update_from_element', 'modChunk', '9'),
+(2925, 1, '2017-09-30 14:58:49', 'chunk_update', 'modChunk', '9'),
+(2926, 1, '2017-09-30 14:58:50', 'propertyset_update_from_element', 'modChunk', '9'),
+(2927, 1, '2017-09-30 15:04:12', 'login', 'modContext', 'web'),
+(2928, 1, '2017-09-30 15:04:27', 'login', 'modContext', 'web'),
+(2929, 1, '2017-09-30 15:15:03', 'chunk_update', 'modChunk', '9'),
+(2930, 1, '2017-09-30 15:15:03', 'propertyset_update_from_element', 'modChunk', '9'),
+(2931, 1, '2017-09-30 15:21:43', 'chunk_update', 'modChunk', '9'),
+(2932, 1, '2017-09-30 15:21:43', 'propertyset_update_from_element', 'modChunk', '9'),
+(2933, 1, '2017-09-30 15:24:10', 'chunk_update', 'modChunk', '9'),
+(2934, 1, '2017-09-30 15:24:10', 'propertyset_update_from_element', 'modChunk', '9'),
+(2935, 1, '2017-09-30 15:24:43', 'chunk_update', 'modChunk', '9'),
+(2936, 1, '2017-09-30 15:24:44', 'propertyset_update_from_element', 'modChunk', '9'),
+(2937, 1, '2017-09-30 15:24:56', 'chunk_update', 'modChunk', '9'),
+(2938, 1, '2017-09-30 15:24:56', 'propertyset_update_from_element', 'modChunk', '9'),
+(2939, 1, '2017-09-30 15:25:23', 'chunk_update', 'modChunk', '9'),
+(2940, 1, '2017-09-30 15:25:23', 'propertyset_update_from_element', 'modChunk', '9'),
+(2941, 1, '2017-09-30 15:26:15', 'login', 'modContext', 'web'),
+(2942, 1, '2017-09-30 15:27:39', 'chunk_update', 'modChunk', '9'),
+(2943, 1, '2017-09-30 15:27:39', 'propertyset_update_from_element', 'modChunk', '9'),
+(2944, 1, '2017-09-30 15:34:11', 'chunk_update', 'modChunk', '9'),
+(2945, 1, '2017-09-30 15:34:12', 'propertyset_update_from_element', 'modChunk', '9'),
+(2946, 1, '2017-09-30 15:49:56', 'chunk_update', 'modChunk', '9'),
+(2947, 1, '2017-09-30 15:49:57', 'propertyset_update_from_element', 'modChunk', '9'),
+(2948, 1, '2017-09-30 15:50:18', 'chunk_update', 'modChunk', '9'),
+(2949, 1, '2017-09-30 15:50:19', 'propertyset_update_from_element', 'modChunk', '9'),
+(2950, 1, '2017-09-30 16:00:57', 'chunk_update', 'modChunk', '9'),
+(2951, 1, '2017-09-30 16:00:57', 'propertyset_update_from_element', 'modChunk', '9'),
+(2952, 1, '2017-09-30 16:12:09', 'chunk_update', 'modChunk', '9'),
+(2953, 1, '2017-09-30 16:12:09', 'propertyset_update_from_element', 'modChunk', '9'),
+(2954, 1, '2017-09-30 16:17:08', 'chunk_update', 'modChunk', '9'),
+(2955, 1, '2017-09-30 16:17:08', 'propertyset_update_from_element', 'modChunk', '9'),
+(2956, 1, '2017-09-30 16:19:44', 'chunk_update', 'modChunk', '9'),
+(2957, 1, '2017-09-30 16:19:45', 'propertyset_update_from_element', 'modChunk', '9'),
+(2958, 1, '2017-09-30 16:35:24', 'login', 'modContext', 'web'),
+(2959, 1, '2017-09-30 16:36:03', 'login', 'modContext', 'web'),
+(2960, 1, '2017-09-30 17:01:48', 'login', 'modContext', 'web'),
+(2961, 1, '2017-09-30 17:02:56', 'login', 'modContext', 'web');
 
 -- --------------------------------------------------------
 
@@ -4891,7 +4971,49 @@ INSERT INTO `new_session` (`id`, `access`, `data`) VALUES
 ('7u1sevdmtamk56mtkega54l6q3', 1506422735, 'modx.user.contextTokens|a:1:{s:3:"mgr";i:1;}modx.mgr.user.token|s:52:"modx58de58ab522034.60981441_159ca2fcbaa3b45.24899781";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}'),
 ('qpcr8k3bvr7svrdt8ktsm71n32', 1506422731, 'modx.user.contextTokens|a:0:{}modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}'),
 ('qpacjrmr2cfit4paecake22lm1', 1506494467, 'modx.user.contextTokens|a:2:{s:3:"web";i:1;s:3:"mgr";i:1;}modx.web.user.token|s:52:"modx58de58ab522034.60981441_159cb453dee7628.92550189";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}modx.mgr.user.token|s:52:"modx58de58ab522034.60981441_159cb4800715138.13607035";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}'),
-('st3fpv61pgutvu01lor3j6gl86', 1506577369, 'modx.user.contextTokens|a:2:{s:3:"mgr";i:1;s:3:"web";i:1;}modx.mgr.user.token|s:52:"modx58de58ab522034.60981441_159cc8bb50404c0.68966979";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.web.user.token|s:52:"modx58de58ab522034.60981441_159cc8bd8b64084.34832935";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}');
+('st3fpv61pgutvu01lor3j6gl86', 1506577369, 'modx.user.contextTokens|a:2:{s:3:"mgr";i:1;s:3:"web";i:1;}modx.mgr.user.token|s:52:"modx58de58ab522034.60981441_159cc8bb50404c0.68966979";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.web.user.token|s:52:"modx58de58ab522034.60981441_159cc8bd8b64084.34832935";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}'),
+('sqos4m440871p2v7v5slp4d6k5', 1506693631, 'modx.user.contextTokens|a:1:{s:3:"mgr";i:1;}modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.mgr.user.token|s:52:"modx58de58ab522034.60981441_159ce51d4cfa036.05079804";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}'),
+('i085lf8dsunec9egk2ovctp745', 1506775835, 'modx.user.contextTokens|a:1:{s:3:"mgr";i:1;}modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.mgr.user.token|s:52:"modx58de58ab522034.60981441_159cf6423a3ce64.70178024";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}'),
+('u5e7oqc9bg2293dcaihom61rq1', 1506775968, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('ctt3auakh5ttuvmol373lcjfc6', 1506770345, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('bncd7d69e3vlgi65c82sp1g8e6', 1506770494, 'modx.user.contextTokens|a:0:{}'),
+('303ngmdg3c6g172vijuvfifbh7', 1506770627, 'modx.user.contextTokens|a:0:{}'),
+('ibhq6chmh4v4ncrnao3pvf43v6', 1506770798, 'modx.user.contextTokens|a:0:{}'),
+('48mg799d5bmmkiitj7f21hscu0', 1506770886, 'modx.user.contextTokens|a:0:{}'),
+('tlbec4r8smr2pst3npcjkthcc7', 1506770901, 'modx.user.contextTokens|a:0:{}'),
+('0qpbj41vs4qthuu6huv6opdhv5', 1506771447, 'modx.user.contextTokens|a:0:{}'),
+('u4jp9hgdgaqfco5ip06lrdikd6', 1506771518, 'modx.user.contextTokens|a:0:{}'),
+('9ldoc9nfp1bvsaftquclhjcua0', 1506771588, 'modx.user.contextTokens|a:0:{}'),
+('88lqv003srujqrqa6m5bufe5u0', 1506771800, 'modx.user.contextTokens|a:0:{}'),
+('u6ijod22rnsr4djvm49vuucmr4', 1506771974, 'modx.user.contextTokens|a:0:{}'),
+('i0cgd8at06oslq8jhvdl1cimd4', 1506772015, 'modx.user.contextTokens|a:0:{}'),
+('rq40mbguhepflqd96l5e90qfs1', 1506772141, 'modx.user.contextTokens|a:0:{}'),
+('bd3vpl312lq248ul04he06und7', 1506772309, 'modx.user.contextTokens|a:0:{}'),
+('uoel266886pb0lmfijlu8bap87', 1506774871, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('5ju1supoajvaskceanlr8eu2n1', 1506773789, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('vm7trsqqmogmha6veofhc3fdh7', 1506772404, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('cmhdss827m4tf2fdn0885anlk3', 1506772459, 'modx.user.contextTokens|a:0:{}'),
+('ilkn1tnc8s87rs3e1lqsajbms0', 1506772529, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('ipbq72dmepaqaoqliggtf5cb87', 1506772552, 'modx.user.contextTokens|a:0:{}'),
+('kb5sckjj22p9o944vo03qts897', 1506772753, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('bc4u7l5is6emkvqbahbprk3492', 1506773037, 'modx.user.contextTokens|a:0:{}'),
+('aq13khmriuqbcah0v68mdrqgl3', 1506773076, 'modx.user.contextTokens|a:0:{}'),
+('shjs80h5hsgai2pfn5pg6o14o3', 1506774080, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('r1o4jv6srnet92j3hvhaks8ct0', 1506775256, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('677nhoqbftb0ag096fue1q43u0', 1506778525, 'modx.user.contextTokens|a:1:{s:3:"web";i:1;}modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.web.user.token|s:52:"modx58de58ab522034.60981441_159cf9d9ce98569.35462512";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}'),
+('4m355tc399mnu88m5r8uee00s0', 1506776462, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('985o8lhqnc6g6aribbo3bfouc6', 1506777138, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('haukvlh2kep5k71lo1inevips1', 1506777385, 'modx.user.contextTokens|a:0:{}'),
+('7aiuein9hv6gv6e3jh18n1j0v6', 1506777443, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('mt2ngngckrl7eam1squpi69n64', 1506777479, 'modx.user.contextTokens|a:0:{}'),
+('luc0akbrj36p4c01s9mp2jm5r7', 1506777538, 'modx.user.contextTokens|a:0:{}'),
+('r6q7hpd0097a6n3n4g2n1hlli7', 1506777595, 'modx.user.0.resourceGroups|a:1:{s:3:"web";a:0:{}}modx.user.0.attributes|a:1:{s:3:"web";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}'),
+('hdv43nhebm0eonci9oi2a9id90', 1506777752, 'modx.user.contextTokens|a:0:{}'),
+('6rg1gu8sbhpq58umga9383f524', 1506777873, 'modx.user.contextTokens|a:0:{}'),
+('dpqvo1mo94f0k6lvq521a24a47', 1506777970, 'modx.user.contextTokens|a:0:{}'),
+('l8hbajaclaebtv7v6a0dsoh170', 1506778436, 'modx.user.contextTokens|a:0:{}'),
+('v208mr1srpdul9ul1gsgb85fo6', 1506780135, 'modx.user.contextTokens|a:0:{}'),
+('r96ckgtgk9v3utglit35cobq72', 1506780176, 'modx.user.contextTokens|a:1:{s:3:"web";i:1;}modx.web.user.token|s:52:"modx58de58ab522034.60981441_159cfa41057a2d0.67008087";modx.web.session.cookie.lifetime|i:0;modx.web.user.config|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -4985,7 +5107,7 @@ CREATE TABLE IF NOT EXISTS `new_site_htmlsnippets` (
   `properties` text,
   `static` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `static_file` varchar(255) NOT NULL DEFAULT ''
-) ENGINE=MyISAM AUTO_INCREMENT=84 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=85 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `new_site_htmlsnippets`
@@ -5000,7 +5122,7 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (6, 0, 0, 'blogit.taglist', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, 0, '[[++blogit.use_tags:isequalto=`1`:then=`\r\n<h4>[[%blogit.tags_header]]</h4>\r\n[[TaggerGetTags? &rowTpl=`blogit.tag_links_tpl` &separator=`, `]]\r\n`]]', 0, 'a:0:{}', 0, ''),
 (7, 0, 0, 'galAlbumRowTpl', '', 0, 10, 0, '<li[[+cls:notempty=` class="[[+cls]]"`]]><a href="[[~[[*id]]? &[[+albumRequestVar]]=`[[+id]]`]]">[[+showName:notempty=`[[+name]]`]]</a></li>', 0, '', 0, ''),
 (8, 0, 0, 'galItemThumb', '', 0, 10, 0, '<div class="[[+cls]]">\n    <a href="[[+linkToImage:if=`[[+linkToImage]]`:is=`1`:then=`[[+image_absolute]]`:else=`[[~[[*id]]?\n            &[[+imageGetParam]]=`[[+id]]`\n            &[[+albumRequestVar]]=`[[+album]]`\n            &[[+tagRequestVar]]=`[[+tag]]` ]]`]]" title="[[+name]]" [[+link_attributes]]>\n\n        <img class="[[+imgCls]]" src="[[+thumbnail]]" alt="[[+name]]" [[+image_attributes]] />\n    </a>\n</div>', 0, '', 0, ''),
-(9, 0, 0, 'lgnLoginTpl', '', 0, 12, 0, '<div class="loginForm">\n    <div class="loginMessage">[[+errors]]</div>\n    <div class="loginLogin">\n        <form class="loginLoginForm" action="[[~[[*id]]]]" method="post">\n            \n            <fieldset class="loginLoginFieldset">\n                \n                <label class="loginUsernameLabel">\n                    <input class="loginUsername form-control" type="text" name="username" placeholder="Логин" required autofocus />\n                </label>\n                \n                <label class="loginPasswordLabel">\n                    <input class="loginPassword form-control" id="inputPassword"  type="password" name="password" placeholder="Пароль" required />\n                </label>\n                <input class="returnUrl" type="hidden" name="returnUrl" value="[[+request_uri]]" />\n\n                [[+login.recaptcha_html]]\n                \n                <input class="loginLoginValue" type="hidden" name="service" value="login" />\n                <span class="loginLoginButton"><button class="btn-sm btn-primary" type="submit">Войти</button></span>\n\n<div class="forg"><span><a class="left" href="[[~8]]">Забыли пароль?</a></span><span> / </span><span> <a class="right" href="[[~10]]"> Регистрация </a ></span></div>\n            </fieldset>\n        </form>\n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
+(9, 0, 0, 'lgnLoginTpl', '', 0, 12, 0, '<div class="loginForm">\n    <div class="loginMessage">[[+errors]]</div>\n    <div class="loginLogin">\n        <form class="loginLoginForm" action="[[~[[*id]]]]" method="post">\n            \n            <fieldset class="loginLoginFieldset">\n                \n                <div class="loginUsernameLabel">\n                    <input class="loginUsername form-control" type="text" name="username" placeholder="Логин" required />\n                </div>\n                \n                <div class="loginPasswordLabel">\n                    <input class="loginPassword form-control" id="inputPassword"  type="password" name="password" placeholder="Пароль" required />\n                </div>\n                <input class="returnUrl" type="hidden" name="returnUrl" value="[[+request_uri]]" />\n\n                [[+login.recaptcha_html]]\n                \n                <input class="loginLoginValue" type="hidden" name="service" value="login" />\n                <button class="btn-sm btn-primary" type="submit">Войти</button>\n\n<div class="forg"><span><a class="left" href="[[~8]]">Забыли пароль?</a></span><span> / </span><span> <a class="right" href="[[~10]]"> Регистрация </a ></span></div>\n            </fieldset>\n        </form>\n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
 (10, 0, 0, 'lgnLogoutTpl', '', 0, 12, 0, '<div class="loginMessage">[[+errors]]</div>\n\n<div class="loginLogin">\n    <div class="loginRegister pull-right">\n        <div class="butt"><a href="[[+logoutUrl]]" title="[[+actionMsg]]"><button class="btn-sm btn-primary out" type="submit">Выйти</button></a>\n       <span> Добро пожаловать <b>[[+modx.user.id:userinfo=`username`]]</b></span></div>\n        \n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
 (11, 0, 0, 'lgnErrTpl', '', 0, 12, 0, '<p class="error">[[+msg]]</p>', 0, 'a:0:{}', 0, ''),
 (12, 0, 0, 'lgnForgotPassEmail', '', 0, 12, 0, '<p>[[+username]],</p>\n\n<p>Для активации аккаунта, нажмите пожалуйста на ссылку снизу:</p>\n\n<p><a href="[[+confirmUrl]]">[[+confirmUrl]]</a></p>\n\n<p>Если все прошло удачно, можете уже авторизоваться в системе:</p>\n\n<p><strong>Password:</strong> [[+password]]</p>\n\n<p>Если вы не заказывали активацию, проигнорируйте это письмо.</p>\n\n<p>Спасибо,<br />\n<em>Администратор сайта [[+sname]]</em></p>', 0, 'a:0:{}', 0, ''),
@@ -5019,7 +5141,7 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (26, 0, 0, 'Carousel', '', 0, 21, 0, '<div class="carousel-main">\n    <div class="container clearfix">\n        <div class="row">\n            <div class="col-sm-12">\n            <div class="owl-carousel main-carousel">\n      <div class="photo1"> \n      \n      </div>\n      <div class="photo2"> \n      \n      </div>\n      <div class="photo3"> \n      \n      </div>\n    </div>\n    \n    </div> \n        </div>\n    </div>\n   \n   \n   \n</div>', 0, 'a:0:{}', 0, ''),
 (27, 1, 0, 'Login', '', 0, 21, 0, '<div class="clearfix"></div>\n<section class="main-login">\n    <div class="container">\n        <div class="row">\n            <div class="col-xs-12">[[!Login? &loginTpl=`lgnLoginTpl` &logoutTpl=`lgnLogoutTpl` &errTpl=`lgnErrTpl` &loginResourceId=`1` &logoutResourceId=`1`]]</div>\n        </div>\n    </div>\n    \n\n</section>', 0, 'a:0:{}', 0, ''),
 (28, 0, 0, 'Main', '', 0, 21, 0, '\n\n\n', 0, 'a:0:{}', 0, ''),
-(29, 0, 0, 'Main unreg', '', 0, 21, 0, '<section class="port-sect grid">\n  <div class="port-sect-item grid">\n    1\n  </div>\n  <div class="port-sect-item grid">\n   2\n  </div>\n  <div class="port-sect-item grid">\n   3\n  </div>\n  <div class="port-sect-item grid">\n   4\n  </div>\n  <div class="port-sect-item grid">\n    5\n  </div>\n  <div class="port-sect-item grid">\n    6\n  </div>\n  <div class="port-sect-item grid">\n    7\n  </div>\n  <div class="port-sect-item grid">\n    8\n  </div>\n  <div class="port-sect-item grid">\n    9\n  </div>\n  <a href="#" class="port-sect-button"><button>Link</button></a>\n</section>\n<section class="section-ready secondary-section">\n  <div class="container grid">\n    <div class="cont-left">\n      <h2>are you ready?</h2>\n      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora repudiandae facere unde optio nulla ratione saepe odio possimus pariatur necessitatibus quasi impedit quod voluptatibus exercitationem modi. Incidunt ab officia pariatur.</p><br>\n      <p>Laborum assumenda quibusdam ea repellendus suscipit nemo laboriosam! Officiis sapiente deserunt perspiciatis qui pariatur cum voluptatum inventore dolores quas excepturi debitis eos alias magnam quibusdam delectus iure voluptates eveniet corporis!</p>\n      \n    </div>\n    <div class="cont-right"><img src="assets/templates/Stas/app/img/service1.png" alt="example" class="img-responsive"></div>\n  </div>\n</section>\n<section class="formsection">\n  <div class="container">\n    <form action="" class="grid">\n      <div><input type="text" placeholder="your name" required></div>\n      <div><input type="text" placeholder="your name"></div>\n      <div><input type="text" placeholder="your name"></div>\n      <div><a href="#" class="port-sect-button"><button>Link</button></a></div>\n    </form>\n  </div>\n</section>\n<section class="section-blog">\n  <div class="container">\n    <h2>Lorem ipsum dolor sit amet.</h2>\n    <div class="home-blog grid">\n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service1.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p> possimus sunt.</p>\n        </span>\n      </a>\n      \n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service4.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p>lorem</p>\n        </span>\n      </a>\n      \n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service3.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p>lorem</p>\n        </span>\n      </a>\n      \n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service4.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p>lorem</p>\n        </span>\n      </a>\n      \n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service1.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p>lorem</p>\n        </span>\n      </a>\n      \n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service2.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p>lorem</p>\n        </span>\n      </a>\n      <a href="#" class="port-sect-button"><button>Link3</button></a>\n    </div>\n    \n   </div\n</section>\n', 0, 'a:0:{}', 0, ''),
+(29, 0, 0, 'Main unreg', '', 0, 21, 0, '<section class="port-sect grid">\n  <div class="port-sect-item grid">\n    1\n  </div>\n  <div class="port-sect-item grid">\n   2\n  </div>\n  <div class="port-sect-item grid">\n   3\n  </div>\n  <div class="port-sect-item grid">\n   4\n  </div>\n  <div class="port-sect-item grid">\n    5\n  </div>\n  <div class="port-sect-item grid">\n    6\n  </div>\n  <div class="port-sect-item grid">\n    7\n  </div>\n  <div class="port-sect-item grid">\n    8\n  </div>\n  <div class="port-sect-item grid">\n    9\n  </div>\n  <a href="#" class="port-sect-button"><button>Link</button></a>\n</section>\n<section class="section-ready secondary-section">\n  <div class="container grid">\n    <div class="cont-left">\n      <h2>are you ready?</h2>\n      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora repudiandae facere unde optio nulla ratione saepe odio possimus pariatur necessitatibus quasi impedit quod voluptatibus exercitationem modi. Incidunt ab officia pariatur.</p><br>\n      <p>Laborum assumenda quibusdam ea repellendus suscipit nemo laboriosam! Officiis sapiente deserunt perspiciatis qui pariatur cum voluptatum inventore dolores quas excepturi debitis eos alias magnam quibusdam delectus iure voluptates eveniet corporis!</p>\n      \n    </div>\n    <div class="cont-right"><img src="assets/templates/Stas/app/img/service1.png" alt="example" class="img-responsive"></div>\n  </div>\n</section>\n<section class="formsection">\n  <div class="container">\n    <form action="" class="grid">\n      <div><input type="text" placeholder="your name" required></div>\n      <div><input type="text" placeholder="your name"></div>\n      <div><input type="text" placeholder="your name"></div>\n      <div><a href="#" class="port-sect-button"><button>Link</button></a></div>\n    </form>\n  </div>\n</section>\n<section class="section-blog">\n  <div class="container">\n    <h2>Lorem ipsum dolor sit amet.</h2>\n    <div class="home-blog grid">\n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service1.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p> possimus sunt.</p>\n        </span>\n      </a>\n      \n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service4.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p>lorem</p>\n        </span>\n      </a>\n      \n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service3.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p>lorem</p>\n        </span>\n      </a>\n      \n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service4.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p>lorem</p>\n        </span>\n      </a>\n      \n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service1.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p>lorem</p>\n        </span>\n      </a>\n      \n      <a href="" class="blog-item grid">\n        \n        <span class="blog-item-img" style="background-image: url(assets/templates/Stas/app/img/service2.png);"></span>\n        <span class="blog-item-content grid">\n          <h4>ghghgh</h4>\n          <p>lorem</p>\n        </span>\n      </a>\n      <a href="#" class="port-sect-button">\n        <button>Link3</button></a>\n    </div>\n    \n   </div>\n</section>', 0, 'a:0:{}', 0, ''),
 (30, 0, 0, 'Registr', '', 0, 21, 0, ' <div class="clearfix"></div>\n <section class="reg">\n     <div class="container">\n         <div class="row">\n             <div class="col-xs-12">\n                  <h3>Регистрация пользователя.</h3>\n      [[!Register?\n        &submitVar=`registerbtn`\n        &activationResourceId=`12`\n        &activationEmailTpl=`myActivationEmailTpl`\n        &activationEmailSubject=`Спасибо за регистрацию!`\n        &submittedResourceId=`11`\n        &usergroups=`Пользователь`\n        &validate=`nospam:blank,\n          username:required:minLength=^3^,\n          password:required:minLength=^6^,\n          password_confirm:password_confirm=^password^,\n          email:required:email`\n        &placeholderPrefix=`reg.`\n      ]]\n      <div class="register">\n        <div class="registerMessage">[[!+reg.error.message]]</div>\n        <form class="form" action="[[~[[*id]]]]" method="post">\n          <input type="hidden" name="nospam" value="[[!+reg.nospam]]" />\n          <label for="username">[[%register.username? &namespace=`login` &topic=`register`]]\n          <span class="error">[[!+reg.error.username]]</span>\n          </label>\n          <input type="text" name="username"  id="username" value="[[!+reg.username]]" placeholder="Мин. 3 символа"  />\n          <label for="password">[[%register.password]]\n          <span class="error">[[!+reg.error.password]]</span>\n          </label>\n          <input type="password" name="password" id="password" value="[[!+reg.password]]" placeholder="Мин. 6 символов" />\n          <label for="password_confirm">[[%register.password_confirm]]\n          <span class="error">[[!+reg.error.password_confirm]]</span>\n          </label>\n          <input type="password" name="password_confirm" id="password_confirm" value="[[!+reg.password_confirm]]" placeholder="Подтвердите пароль"  />\n          <label for="fullname">[[%register.fullname]]\n          <span class="error">[[!+reg.error.fullname]]</span>\n          </label>\n          <input type="text" name="fullname" id="fullname" value="[[!+reg.fullname]]"placeholder="Не обязательно" />\n          <label for="email">[[%register.email]]\n          <span class="error">[[!+reg.error.email]]</span>\n          </label>\n          <input type="text" name="email" id="email" value="[[!+reg.email]]" placeholder="Обязательно" />\n        <br class="clear" />\n          <div class="form-buttons">\n            <input class="sub" type="submit" name="registerbtn" value="Зарегистрироваться" />\n          </div>\n        </form>\n      </div>\n             </div>\n         </div>\n     </div>  \n     \n    </section>     \n   ', 0, 'a:0:{}', 0, ''),
 (31, 1, 0, 'Forgp', '', 0, 21, 0, ' <div class="clearfix"></div>\n <section class="forgot">\n     <div class="container">\n         <div class="row">\n             <div class="col-xs-12"> [[!ForgotPassword? &resetResourceId=`9` &tpl=`lgnForgotPassTpl`]]</div>\n         </div>\n     </div>\n     \n    </section>', 0, 'a:0:{}', 0, ''),
 (32, 1, 0, 'myActivationEmailTpl', '', 0, 12, 0, '<p>[[+username]],</p>\n\n<p>Спасибо за регистрацию и интерес к нашему сайту [[+sname]], для активации аккаунта нажмите на ссылку:</p>\n\n<p><a href="[[+confirmUrl]]">[[+confirmUrl]]</a></p>\n\n<p>После активации аккаунта, вы можете использовать свои логин и пароль:</p>\n\n<p>\nЛогин: <strong>[[+username]]</strong><br />\nПароль: <strong>[[+password]]</strong></p>\n\n<p>Если вы не регистрировались на сайте [[+sname]], проигнорируйте это письмо.</p>\n\n<p>Спасибо,<br />\n<em>Администратор сайта [[+sname]] </em></p>', 0, 'a:0:{}', 0, ''),
@@ -5042,7 +5164,8 @@ INSERT INTO `new_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `nam
 (68, 0, 0, 'DemoGalItemThumb', '', 0, 10, 0, '<div class="col-sm-6 col-md-4 col-lg-3">\n    <div class="item-wrap">\n        <a href="[[+image]]" rel="colorbox" title="[[+description]]">\n        <img class="[[+imgCls]]" src="[[+thumbnail]]" alt="[[+name]]" />\n    <div class="overlay">\n        <div class="box">\n            <div class="content">\n                <span class="effort-des black"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span>\n            </div>\n        </div>\n    </div>\n</a>\n\n    </div>\n</div>\n\n\n                                    \n                                    \n                                ', 0, 'a:0:{}', 0, ''),
 (69, 0, 0, 'DemoGalleryAlbumTpl', '', 0, 10, 0, '\n\n<div class="albumname">\n<div class="link"><a href="[[~[[*id]]]][[+id]]"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>Назад в галерею.</a>\n</div>\n<h1>[[+album_name]]</h1>\n</div>\n[[+thumbnails]]\n', 0, NULL, 0, ''),
 (70, 0, 0, 'SiteGalleryItemTpl', '', 0, 10, 0, '<div class="galItem [[+class]]">\n    <div class="title"><span>[[+title]]</span></div>\n    <a href="[[+src]]" class="gallery" title="[[+title]]">\n        <img src="/assets/components/site_gallery/connector.php?action=web/image/gallery/small&src=[[+src]]"/>\n    </a>\n</div>', 0, NULL, 0, ''),
-(71, 0, 0, 'SiteGalleryRowTpl', '', 0, 10, 0, '<div class="[[+class]]">[[+wrapper]]</div>', 0, NULL, 0, '');
+(71, 0, 0, 'SiteGalleryRowTpl', '', 0, 10, 0, '<div class="[[+class]]">[[+wrapper]]</div>', 0, NULL, 0, ''),
+(84, 0, 0, 'Footer', '', 0, 21, 0, '<footer class="main-footer grid">\n  <div class="footer-logo grid">we are<span>creators</span></div>\n  <div class="copyright">~<i class="fa fa-copyright" aria-hidden="true"></i>~</div>\n</footer>', 0, 'a:0:{}', 0, '');
 
 -- --------------------------------------------------------
 
@@ -5805,7 +5928,7 @@ INSERT INTO `new_system_settings` (`key`, `value`, `xtype`, `namespace`, `area`,
 ('send_poweredby_header', '0', 'combo-boolean', 'core', 'system', NULL),
 ('show_tv_categories_header', '1', 'combo-boolean', 'core', 'manager', NULL),
 ('signupemail_message', '<p>Hello [[+uid]],</p>\n    <p>Here are your login details for the [[+sname]] MODX Manager:</p>\n\n    <p>\n        <strong>Username:</strong> [[+uid]]<br />\n        <strong>Password:</strong> [[+pwd]]<br />\n    </p>\n\n    <p>Once you log into the MODX Manager at [[+surl]], you can change your password.</p>\n\n    <p>Regards,<br />Site Administrator</p>', 'textarea', 'core', 'authentication', NULL),
-('site_name', 'Mysite', 'textfield', 'core', 'site', '2017-09-01 12:47:51'),
+('site_name', 'grid', 'textfield', 'core', 'site', '2017-09-30 09:30:53'),
 ('site_start', '1', 'textfield', 'core', 'site', NULL),
 ('site_status', '1', 'combo-boolean', 'core', 'site', NULL),
 ('site_unavailable_message', 'The site is currently unavailable', 'textfield', 'core', 'site', NULL),
@@ -6275,7 +6398,7 @@ CREATE TABLE IF NOT EXISTS `new_user_attributes` (
 --
 
 INSERT INTO `new_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 242, 1506664741, 1506692336, 0, 'e50ticvvd79siuvqidgoaavsv5', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 256, 1506780108, 1506780176, 0, 'r96ckgtgk9v3utglit35cobq72', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (3, 3, '', 'platonov_stan@mail.ru', '', '', 0, 0, 0, 7, 1491287477, 1491302110, 0, 'pinq7vkq5q6r7f8adtj2m64550', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
 -- --------------------------------------------------------
@@ -7412,7 +7535,7 @@ ALTER TABLE `new_lexicon_entries`
 -- AUTO_INCREMENT для таблицы `new_manager_log`
 --
 ALTER TABLE `new_manager_log`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2882;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2962;
 --
 -- AUTO_INCREMENT для таблицы `new_media_sources`
 --
@@ -7487,7 +7610,7 @@ ALTER TABLE `new_site_content`
 -- AUTO_INCREMENT для таблицы `new_site_htmlsnippets`
 --
 ALTER TABLE `new_site_htmlsnippets`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=84;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=85;
 --
 -- AUTO_INCREMENT для таблицы `new_site_plugins`
 --

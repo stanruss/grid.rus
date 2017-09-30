@@ -5,10 +5,7 @@
 
 
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: rgba(0,0,0,.25)
-	border-color: rgba(0,0,0,.25)
+
 
 html, body
 	height: 100%
@@ -88,7 +85,7 @@ section
 		z-index: 1
 		button
 			font-size: 16px
-			margin-top: 2px
+			margin-top: 3px
 		p
 			color: $white
 		span
@@ -105,15 +102,20 @@ section
 				
 		.loginLoginFieldset
 			float: right
-			label
-				font-family: 'PlayfairDisplay-Bold' , serif
 			.forg	
 				float: right
 				line-height: 39px
 			span
 				@include margin(0, right)
 				@include margin(10px, left)
-
+			.loginUsernameLabel
+				float: left
+				margin-right: 10px
+				margin-top: 4px
+			.loginPasswordLabel
+				float: left
+				margin-right: 10px
+				margin-top: 4px
 .grid
 	display: grid
 .header-carousel
@@ -215,6 +217,7 @@ button
 		padding: 0
 .section-blog
 	padding-top: 20px
+
 .home-blog
 	grid-gap: $gutter
 	grid-template-columns: repeat(4, 1fr)
@@ -241,13 +244,53 @@ button
 		background-position: center
 		transition: transform .25s ease
 		&:hover
-			transform: scale(1.1)
+			transform: scale(1.1) translateY(-8px)
+			 
 	&-content
 		padding: 25px
 		text-align: center
 		align-content: center
 		
-
+.main-footer
+	padding: 60px 0
+	background-color: darken($main-color, 20%)
+	grid-template-columns: repeat(1, 1fr)
+	text-align: center
+	position: relative
+	@include border(1px, #000, top-bottom)
+	&::before
+		display: block
+		position: absolute
+		content: ''
+		height: 2px
+		background-color: #fff
+		width: 100%
+		top: 3px
+	&::after
+		display: block
+		position: absolute
+		content: ''
+		height: 2px
+		background-color: #fff
+		width: 100%
+		bottom: 3px
+.footer-logo
+	align-content: center
+	grid-column: 1
+	color: lighten($main-color, 25%)
+	font-size: 22px
+	line-height: 1.16
+	font-weight: bold
+	text-transform: uppercase
+	span
+		color: lighten($main-color, 15%)
+		font-size: 27px
+.copyright
+	color: lighten($main-color, 15%)
+	font-size: 20px
+	margin-top: 20px
+	.fa
+		margin: 0 $gutter/2	
 
 .secondary-section
 	color: #000 darken($white, 10%)
