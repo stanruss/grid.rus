@@ -215,7 +215,22 @@
 	-moz-border-radius: $rad
 	-ms-border-radius: $rad
 	border-radius: $rad
-
+=button
+	color: $white $main-color
+	outline: none
+	border: 1px darken($main-color,25%) solid
+	padding: 5px 55px
+	background-image: none
+	@include border-radius(3px,all)
+	&:hover
+		background-color: darken($main-color, 15%)
+		color: $accent
+		transition: all .5s ease
+		border: 1px darken($main-color,45%) solid
+	&:focus
+		border: 1px darken($main-color,25%) solid
+		color: $accent
+		background-color: $main-color
 // Скругление на каждый угол
 // пример: @include br-c(10px,0,10px,0);
 =br-c($p1, $p2, $p3, $p4)

@@ -99,12 +99,17 @@ section
 			p
 				font-size: 15px
 				color: lighten(red, 8%)
-				
+		.loginRegister 
+			button
+				+button		
 		.loginLoginFieldset
 			float: right
 			.forg	
 				float: right
 				line-height: 39px
+			button
+				+button
+				
 			span
 				@include margin(0, right)
 				@include margin(10px, left)
@@ -112,10 +117,40 @@ section
 				float: left
 				margin-right: 10px
 				margin-top: 4px
+				input.form-control
+					border: none
+					padding: 15px 20px
+					border-radius: 0
+					width: 100%
+					font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+					font-style: italic
+					outline: none
+					-webkit-text-fill-color: lighten($white, 25%)
+					-webkit-box-shadow: inset 0 0 0 50px darken($main-color, 12%)
+					transition: all 0.25s ease
+					&:focus
+						-webkit-box-shadow: inset 0 0 0 50px lighten($main-color, 25%)
+						-webkit-text-fill-color: darken($main-color, 35%)
+					
+				
 			.loginPasswordLabel
 				float: left
 				margin-right: 10px
 				margin-top: 4px
+				input.form-control
+					border: none
+					padding: 15px 20px
+					border-radius: 0
+					width: 100%
+					font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+					font-style: italic
+					outline: none
+					-webkit-text-fill-color: lighten($white, 25%)
+					-webkit-box-shadow: inset 0 0 0 50px darken($main-color, 12%)
+					transition: all 0.25s ease
+					&:focus
+						-webkit-box-shadow: inset 0 0 0 50px lighten($main-color, 25%)
+						-webkit-text-fill-color: darken($main-color, 35%)
 .grid
 	display: grid
 .header-carousel
@@ -175,20 +210,8 @@ section
 	grid-column: 1/5
 	padding: $gutter 		
 button
-	color: $white $main-color
-	outline: none
-	border: 1px darken($main-color,25%) solid
-	padding: 7px 55px
-	@include border-radius(3px,all)
-	&:hover
-		background-color: darken($main-color, 15%)
-		color: $accent
-		transition: all .5s ease
-		border: 1px darken($main-color,45%) solid
-	&:focus
-		border: 1px darken($main-color,25%) solid
-		color: $accent
-		background-color: $main-color
+	+button
+	
 .section-ready .container
 	grid-template-columns: repeat(2, 2fr)
 	grid-gap: 10px
@@ -325,7 +348,6 @@ input, textarea
 			color: $main-color
 	&::placeholder
 		color: darken($white, 10%)
-
 ol, ul
   list-style: none
 
@@ -347,9 +369,7 @@ table
   border-spacing: 0
 .clearfix
 	clear: both
-input
-	position: relative
-	opacity: .99
+
 #upbutton 
 	height: 39px
 	width: 120px
